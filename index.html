@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang="en-us"> 
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title> Quiz</title>
+        <!-- link for the CSS style sheet -->
+      <link rel="stylesheet" href="./assets/css/style.css" />
+    </head> 
+    <body>
+    <header>   
+        <!-- High Score and Timer container -->
+        <nav class="score-timer">  
+                <a class="score" id = "scorelink" >View High Scores</a>
+                <span class="timeprop" id="timer"></span>
+        </nav>
+    </header>
+    <main>    
+        <br>
+        <br>
+        <!-- Main container Flexbox applied -->
+        <section class="container">
+            <div class="question-container"> 
+                <div class="in-content">
+                    <h1 class="question" id="question-change">Coding Quiz Challenge</h1>
+                    <hr class="division-line">                  
+                    <section class="multi-answer">        
+                        <div class="left-side">
+                        </div>
+                        <div class="right-side">                           
+                            <section id="principal-content">                             
+                                <h5 class=title>
+                                  Try to answer the following code-related questions within the time limit.
+                                  <br>
+                                  Keep in mind that incorrect answers will penalize your score/time
+                                  <br>
+                                  by ten seconds!  
+                                </h5>                              
+                                <div class="startButton">
+                                    <button type="submit" id="startquiz" class="btn">Start Quiz</button>
+                                </div>
+                            </section>
+                            <!-- div for result -->
+                            <div id = "quizquestion"></div>
+                            <div id = "userscore"></div>
+                            <div id = "userhighscores"> </div>                       
+                        </div>
+                    </section>                                     
+                    <section id="userselection">
+                         <hr class="-division-line">
+                    </section>    
+                </div>
+            </div>                     
+        </section>
+        <br>
+    </main>
+    <script src="./assets/js/script.js"></script>
+    </body>
+    
+</html>
